@@ -9,9 +9,25 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <!-- Asegúrate de que esta versión coincide con la de tu JDK -->
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Puedes actualizar a la última versión si es necesario -->
+                <configuration>
+                    <!-- Ajusta las versiones según tu JDK -->
+                    <source>22</source>
+                    <target>22</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
